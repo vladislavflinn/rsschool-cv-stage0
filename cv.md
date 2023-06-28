@@ -33,3 +33,8 @@ function findDifference(a, b) {
 - [Learn JavaScript](https://javascript.info/)
 - [The Complete JavaScript Course](https://www.udemy.com/course/the-complete-javascript-course/)
 - [RS School](https://rs.school/js/)
+
+## Languages
+
+- English – A2
+- Russian – Native
