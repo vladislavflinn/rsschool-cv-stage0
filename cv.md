@@ -15,5 +15,21 @@ Hello, I am a beginner web developer. I would like to create beautiful web appli
 - HTML
 - CSS, SASS
 - JavaScript
+- BEM methodology
 - Git, GitHub
 - Figma
+
+## Code Example
+
+```
+function findDifference(a, b) {
+	return Math.abs(a.reduce((v, el) => v * el, 1) - b.reduce((v, el) => v * el, 1));
+}
+```
+
+## Courses
+
+- [W3Schools HTML / CSS](https://www.w3schools.com/)
+- [Learn JavaScript](https://javascript.info/)
+- [The Complete JavaScript Course](https://www.udemy.com/course/the-complete-javascript-course/)
+- [RS School](https://rs.school/js/)
