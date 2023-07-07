@@ -85,6 +85,7 @@
 		width: rem(90);
 		height: rem(90);
 
+		border: 1px solid $hover;
 		border-radius: 50%;
 		overflow: hidden;
 
@@ -200,6 +201,17 @@
 		@include ibg(contain);
 		width: rem(30);
 		height: rem(30);
+
+		border-radius: 8px;
+
+		transition: all 0.2s ease 0s;
+
+		&:hover {
+			background-color: $hover;
+		}
+		&:active {
+			background-color: $accent;
+		}
 	}
 	// .item-contacts__icon
 	&__icon {
@@ -219,8 +231,17 @@
 		line-height: percent(17, 14);
 		color: $text-1;
 
+		transition: all 0.1s ease 0s;
+
 		&:not(:last-child) {
 			margin-bottom: rem(4);
+		}
+
+		&:hover {
+			color: $hover;
+		}
+		&:active {
+			color: $accent;
 		}
 	}
 }
@@ -343,6 +364,12 @@
 
 	padding: rem(15) rem(25) rem(15) rem(25);
 
+	transition: all 0.2s ease 0s;
+
+	&:hover {
+		background-color: $hover;
+	}
+
 	// .item-experience__icon-wrapper
 	&__icon-wrapper {
 		flex: 0 0 auto;
@@ -354,6 +381,15 @@
 		box-shadow: 0px 2px 4px 0px rgba(73, 78, 101, 0.1);
 		border-radius: 8px;
 		overflow: hidden;
+
+		transition: all 0.2s ease 0s;
+
+		&:hover {
+			box-shadow: 0px 2px 4px 0px rgba(73, 78, 101, 0.3);
+		}
+		&:active {
+			box-shadow: 0px 2px 4px 0px rgba(73, 78, 101, 0);
+		}
 	}
 	// .item-experience__icon
 	&__icon {
@@ -370,10 +406,19 @@
 	&__company {
 		line-height: percent(24, 16);
 		color: $text-1;
+
+		transition: all 0.1s ease 0s;
+
+		&:hover {
+			color: $accent;
+		}
+		&:active {
+			color: $text-2;
+		}
 	}
 	// .item-experience__date
 	&__date {
-		font-size: 14px;
+		font-size: rem(14);
 		font-weight: 400;
 		line-height: percent(18, 14);
 		letter-spacing: rem(0.14);
@@ -409,6 +454,12 @@
 		border-radius: 8px;
 
 		padding: rem(8) rem(24) rem(8) rem(24);
+
+		transition: all 0.2s ease 0s;
+
+		&:hover {
+			background-color: $hover;
+		}
 	}
 	// .skills__skill
 	&__skill {
@@ -441,6 +492,12 @@
 		line-height: percent(24, 12);
 		letter-spacing: rem(0.12);
 		color: $text-1;
+
+		transition: all 0.2s ease 0s;
+
+		&:hover {
+			background-color: $hover;
+		}
 	}
 }
 .projects {
@@ -475,6 +532,12 @@
 	background-color: $bg-2;
 	border-radius: 8px;
 
+	transition: all 0.2s ease 0s;
+
+	&:hover {
+		background-color: $hover;
+	}
+
 	// .item-projects__preview-wrapper
 	&__preview-wrapper {
 		flex: 0 0 auto;
@@ -490,6 +553,15 @@
 		&:not(:last-child) {
 			margin-bottom: rem(15);
 		}
+
+		transition: all 0.2s ease 0s;
+
+		&:hover {
+			box-shadow: 0px 2px 4px 0px rgba(73, 78, 101, 0.3);
+		}
+		&:active {
+			box-shadow: 0px 2px 4px 0px rgba(73, 78, 101, 0);
+		}
 	}
 	// .item-projects__preview
 	&__preview {
@@ -502,6 +574,15 @@
 
 		&:not(:last-child) {
 			margin-bottom: rem(30);
+		}
+
+		transition: all 0.1s ease 0s;
+
+		&:hover {
+			color: $accent;
+		}
+		&:active {
+			color: $text-2;
 		}
 	}
 }
@@ -540,6 +621,12 @@
 			background-color: $accent;
 			border-radius: 50%;
 		}
+
+		transition: all 0.2s ease 0s;
+
+		&:hover {
+			background-color: $hover;
+		}
 	}
 }
 .footer {
@@ -569,6 +656,17 @@
 		@include ibg(contain);
 		width: rem(40);
 		height: rem(40);
+
+		border-radius: 8px;
+
+		transition: all 0.2s ease 0s;
+
+		&:hover {
+			background-color: $hover;
+		}
+		&:active {
+			background-color: $accent;
+		}
 	}
 	// .footer__github-logo
 	&__github-logo {
@@ -577,6 +675,15 @@
 	&__github-text {
 		color: $text-1;
 		line-height: percent(24, 16);
+
+		transition: all 0.1s ease 0s;
+
+		&:hover {
+			color: $hover;
+		}
+		&:active {
+			color: $accent;
+		}
 	}
 	// .footer__year
 	&__year {
@@ -591,6 +698,15 @@
 		@include ibg(contain);
 		width: rem(107);
 		height: rem(40);
+
+		transition: all 0.2s ease 0s;
+
+		&:hover {
+			background-color: $hover;
+		}
+		&:active {
+			background-color: $accent;
+		}
 	}
 	// .footer__rs-school-logo
 	&__rs-school-logo {

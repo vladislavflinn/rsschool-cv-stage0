@@ -123,6 +123,7 @@ input, button, textarea {
   position: relative;
   width: 5.625rem;
   height: 5.625rem;
+  border: 1px solid #e3e7fe;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -208,6 +209,8 @@ input, button, textarea {
   position: relative;
   width: 1.875rem;
   height: 1.875rem;
+  border-radius: 8px;
+  transition: all 0.2s ease 0s;
 }
 .item-contacts__icon-wrapper img {
   position: absolute;
@@ -220,6 +223,12 @@ input, button, textarea {
   -o-object-position: center;
      object-position: center;
 }
+.item-contacts__icon-wrapper:hover {
+  background-color: #e3e7fe;
+}
+.item-contacts__icon-wrapper:active {
+  background-color: #516cf7;
+}
 .item-contacts__title:not(:last-child) {
   margin-bottom: 0.25rem;
 }
@@ -227,9 +236,16 @@ input, button, textarea {
   font-size: 0.875rem;
   line-height: 121.4285714286%;
   color: #494e65;
+  transition: all 0.1s ease 0s;
 }
 .item-contacts__link:not(:last-child) {
   margin-bottom: 0.25rem;
+}
+.item-contacts__link:hover {
+  color: #e3e7fe;
+}
+.item-contacts__link:active {
+  color: #516cf7;
 }
 
 .languages__title:not(:last-child) {
@@ -311,6 +327,10 @@ input, button, textarea {
   background-color: #f9f9fa;
   border-radius: 8px;
   padding: 0.9375rem 1.5625rem 0.9375rem 1.5625rem;
+  transition: all 0.2s ease 0s;
+}
+.item-experience:hover {
+  background-color: #e3e7fe;
 }
 .item-experience__icon-wrapper {
   flex: 0 0 auto;
@@ -320,6 +340,7 @@ input, button, textarea {
   box-shadow: 0px 2px 4px 0px rgba(73, 78, 101, 0.1);
   border-radius: 8px;
   overflow: hidden;
+  transition: all 0.2s ease 0s;
 }
 .item-experience__icon-wrapper img {
   position: absolute;
@@ -332,6 +353,12 @@ input, button, textarea {
   -o-object-position: center;
      object-position: center;
 }
+.item-experience__icon-wrapper:hover {
+  box-shadow: 0px 2px 4px 0px rgba(73, 78, 101, 0.3);
+}
+.item-experience__icon-wrapper:active {
+  box-shadow: 0px 2px 4px 0px rgba(73, 78, 101, 0);
+}
 .item-experience__body {
   flex: 1 0 auto;
 }
@@ -341,9 +368,16 @@ input, button, textarea {
 .item-experience__company {
   line-height: 150%;
   color: #494e65;
+  transition: all 0.1s ease 0s;
+}
+.item-experience__company:hover {
+  color: #516cf7;
+}
+.item-experience__company:active {
+  color: #6a6e85;
 }
 .item-experience__date {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 128.5714285714%;
   letter-spacing: 0.00875rem;
@@ -370,6 +404,10 @@ input, button, textarea {
   background-color: #f9f9fa;
   border-radius: 8px;
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  transition: all 0.2s ease 0s;
+}
+.skills__item:hover {
+  background-color: #e3e7fe;
 }
 .skills__skill {
   line-height: 150%;
@@ -392,6 +430,10 @@ input, button, textarea {
   line-height: 200%;
   letter-spacing: 0.0075rem;
   color: #494e65;
+  transition: all 0.2s ease 0s;
+}
+.code-example__code:hover {
+  background-color: #e3e7fe;
 }
 
 .projects__title:not(:last-child) {
@@ -417,6 +459,10 @@ input, button, textarea {
   padding: 1.5625rem 1.5625rem 1.5625rem 1.5625rem;
   background-color: #f9f9fa;
   border-radius: 8px;
+  transition: all 0.2s ease 0s;
+}
+.item-projects:hover {
+  background-color: #e3e7fe;
 }
 .item-projects__preview-wrapper {
   flex: 0 0 auto;
@@ -426,6 +472,7 @@ input, button, textarea {
   box-shadow: 0px 2px 4px 0px rgba(73, 78, 101, 0.1);
   border-radius: 8px;
   overflow: hidden;
+  transition: all 0.2s ease 0s;
 }
 .item-projects__preview-wrapper img {
   position: absolute;
@@ -441,13 +488,26 @@ input, button, textarea {
 .item-projects__preview-wrapper:not(:last-child) {
   margin-bottom: 0.9375rem;
 }
+.item-projects__preview-wrapper:hover {
+  box-shadow: 0px 2px 4px 0px rgba(73, 78, 101, 0.3);
+}
+.item-projects__preview-wrapper:active {
+  box-shadow: 0px 2px 4px 0px rgba(73, 78, 101, 0);
+}
 .item-projects__title {
   font-size: 1.125rem;
   line-height: 150%;
   color: #494e65;
+  transition: all 0.1s ease 0s;
 }
 .item-projects__title:not(:last-child) {
   margin-bottom: 1.875rem;
+}
+.item-projects__title:hover {
+  color: #516cf7;
+}
+.item-projects__title:active {
+  color: #6a6e85;
 }
 
 .education__title:not(:last-child) {
@@ -467,6 +527,7 @@ input, button, textarea {
   padding: 2.25rem 1.5625rem 2.25rem 1.5625rem;
   background-color: #f9f9fa;
   border-radius: 8px;
+  transition: all 0.2s ease 0s;
 }
 .education__text::before {
   content: "";
@@ -475,6 +536,9 @@ input, button, textarea {
   flex: 0 0 auto;
   background-color: #516cf7;
   border-radius: 50%;
+}
+.education__text:hover {
+  background-color: #e3e7fe;
 }
 
 .footer {
@@ -500,6 +564,8 @@ input, button, textarea {
   position: relative;
   width: 2.5rem;
   height: 2.5rem;
+  border-radius: 8px;
+  transition: all 0.2s ease 0s;
 }
 .footer__github-logo-wrapper img {
   position: absolute;
@@ -512,9 +578,22 @@ input, button, textarea {
   -o-object-position: center;
      object-position: center;
 }
+.footer__github-logo-wrapper:hover {
+  background-color: #e3e7fe;
+}
+.footer__github-logo-wrapper:active {
+  background-color: #516cf7;
+}
 .footer__github-text {
   color: #494e65;
   line-height: 150%;
+  transition: all 0.1s ease 0s;
+}
+.footer__github-text:hover {
+  color: #e3e7fe;
+}
+.footer__github-text:active {
+  color: #516cf7;
 }
 .footer__year-text {
   color: #494e65;
@@ -524,6 +603,7 @@ input, button, textarea {
   position: relative;
   width: 6.6875rem;
   height: 2.5rem;
+  transition: all 0.2s ease 0s;
 }
 .footer__rs-school-logo-wrapper img {
   position: absolute;
@@ -535,4 +615,10 @@ input, button, textarea {
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
+}
+.footer__rs-school-logo-wrapper:hover {
+  background-color: #e3e7fe;
+}
+.footer__rs-school-logo-wrapper:active {
+  background-color: #516cf7;
 }
