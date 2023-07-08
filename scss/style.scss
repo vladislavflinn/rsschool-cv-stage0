@@ -13,6 +13,12 @@
 	background-color: $accent;
 }
 
+:focus,
+a:focus {
+	outline: 2px solid $accent;
+	border-radius: 8px;
+}
+
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
@@ -107,6 +113,41 @@
 	line-height: percent(30, 22);
 	letter-spacing: rem(0.22);
 	color: $text-1;
+
+	position: relative;
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: -60px;
+		width: rem(30);
+		height: rem(30);
+
+		background-color: $bg-1;
+		border-radius: 50%;
+		box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+	}
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 11px;
+		left: -49px;
+		width: rem(8);
+		height: rem(8);
+
+		background-color: $accent;
+		border-radius: 50%;
+		box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+	}
+	@media (max-width: em(767.98)) {
+		&::before,
+		&::after {
+			display: none;
+		}
+	}
 }
 .subtitle {
 	font-size: rem(14);
@@ -520,6 +561,7 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+		column-gap: rem(10);
 
 		min-height: rem(40);
 
@@ -532,6 +574,115 @@
 
 		&:hover {
 			background-color: $hover;
+		}
+
+		&_html {
+			&::before {
+				flex: 0 0 auto;
+
+				content: "";
+				width: rem(8);
+				height: rem(8);
+
+				background-color: #dd4b25;
+				border-radius: 50%;
+			}
+		}
+		&_css {
+			&::before {
+				flex: 0 0 auto;
+
+				content: "";
+				width: rem(8);
+				height: rem(8);
+
+				background-color: #2862e9;
+				border-radius: 50%;
+			}
+		}
+		&_sass {
+			&::before {
+				flex: 0 0 auto;
+
+				content: "";
+				width: rem(8);
+				height: rem(8);
+
+				background-color: #c66394;
+				border-radius: 50%;
+			}
+		}
+		&_bem {
+			&::before {
+				flex: 0 0 auto;
+
+				content: "";
+				width: rem(8);
+				height: rem(8);
+
+				background-color: #309ed8;
+				border-radius: 50%;
+			}
+		}
+		&_js {
+			&::before {
+				flex: 0 0 auto;
+
+				content: "";
+				width: rem(8);
+				height: rem(8);
+
+				background-color: #efd81d;
+				border-radius: 50%;
+			}
+		}
+		&_git {
+			&::before {
+				flex: 0 0 auto;
+
+				content: "";
+				width: rem(8);
+				height: rem(8);
+
+				background-color: #e84e31;
+				border-radius: 50%;
+			}
+		}
+		&_github {
+			&::before {
+				flex: 0 0 auto;
+
+				content: "";
+				width: rem(8);
+				height: rem(8);
+
+				background-color: #171515;
+				border-radius: 50%;
+			}
+		}
+		&_vscode {
+			flex: 0 0 auto;
+
+			&::before {
+				content: "";
+				width: rem(8);
+				height: rem(8);
+
+				background-color: #42a5ea;
+				border-radius: 50%;
+			}
+		}
+		&_figma {
+			flex: 0 0 auto;
+
+			&::before {
+				content: "";
+				width: rem(8);
+				height: rem(8);
+
+				background-color: #0ac97f;
+				border-radius: 50%;
+			}
 		}
 	}
 	// .skills__skill
