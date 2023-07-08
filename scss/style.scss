@@ -121,7 +121,7 @@ a:focus {
 		display: block;
 		position: absolute;
 		top: 0;
-		left: -60px;
+		left: rem(-60);
 		width: rem(30);
 		height: rem(30);
 
@@ -133,8 +133,8 @@ a:focus {
 		content: "";
 		display: block;
 		position: absolute;
-		top: 11px;
-		left: -49px;
+		top: rem(11);
+		left: rem(-49);
 		width: rem(8);
 		height: rem(8);
 

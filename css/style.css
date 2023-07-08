@@ -172,7 +172,7 @@ a:focus {
   display: block;
   position: absolute;
   top: 0;
-  left: -60px;
+  left: -3.75rem;
   width: 1.875rem;
   height: 1.875rem;
   background-color: #fff;
@@ -183,8 +183,8 @@ a:focus {
   content: "";
   display: block;
   position: absolute;
-  top: 11px;
-  left: -49px;
+  top: 0.6875rem;
+  left: -3.0625rem;
   width: 0.5rem;
   height: 0.5rem;
   background-color: #516cf7;
